@@ -1,9 +1,16 @@
-
-body{
+body {
     font-family: Arial, sans-serif;
+    color: #3f495a;
 }
 
-nav{
+h3 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: #263244;
+}
+
+nav {
     width: 100%;
     height: 60px;
     background: #344051;
@@ -17,12 +24,12 @@ nav{
     float: left;
 }
 
-.menu{
+.menu {
     float: left;
     padding-left: 432px;
 }
 
-.menu li{
+.menu li {
     float: left;
     line-height: 60px;
     color: white;
@@ -31,31 +38,33 @@ nav{
     text-transform: uppercase;
 }
 
-.main{
+.main {
     width: 100%;
     height: calc(100% - 60px);
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
 }
 
-.title_container{
+.title_container {
     float: left;
     margin: 432px 0px 0px 404px;
     color: 2c384a;
     text-align: center;
 }
 
-.title_container h1{
+.title_container h1 {
     font-size: 60px;
     font-weight: bold;
 }
 
-.title_container h4{
+.title_container h4 {
     margin-top: 40px;
     font-size: 22px;
     color: 79818d;
 }
 
-.title_container input{
+
+
+.title_container input {
     height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
@@ -65,4 +74,605 @@ nav{
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+}
+
+
+
+.for_me {
+    width: 100%;
+    height: 720px;
+    background: #fcfdfd;
+    padding: 110px 590px 0px 590px;
+    text-align: center;
+}
+
+.for_me h3 {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.for_me p {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.line {
+    padding-top: 30px;
+}
+
+.img {
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+}
+
+.for_me p {
+    margin-bottom: 40px;
+}
+
+.for_me input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: url(../img/icon.svg) left no-repeat;
+    background-position: 11px;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 16px;
+    padding: 10px 10px 10px 32px;
+}
+
+.skill {
+    width: 100%;
+    height: 520px;
+    padding: 0px 353px 0px 352px;
+    background: url(../img/bg_skill.jpg);
+    text-align: center;
+}
+
+.skill h3 {
+    padding-top: 107px;
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.container_skills {
+    width: 1200px;
+    height: 320px;
+}
+
+.box_skills {
+    width: 210px;
+    height: 160px;
+    float: left;
+    margin: 100px 40px;
+}
+
+.box_skills img {
+    height: 37px;
+    width: auto;
+}
+
+.box_skills h4 {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #cf7600;
+}
+
+.box_skills p {
+    font-size: 16px;
+}
+
+
+
+.keyses {
+
+    width: 100%;
+
+    height: 2000px;
+
+    background: #fcfdfd;
+
+    padding: 110px 382px 0px 383px;
+
+    text-align: center;
+
+}
+
+
+
+.keyses h3 {
+
+    font-size: 33px;
+
+    font-weight: bold;
+
+}
+
+
+
+.keyses > p {
+
+    padding-top: 36px;
+
+    font-size: 16px;
+
+}
+
+
+
+.client_inf_cont {
+
+    height: 185px;
+
+    width: 1136;
+
+    text-align: left;
+
+}
+
+
+
+.example {
+
+    width: 100%;
+
+    height: auto;
+
+    padding: 40px 0px;
+
+}
+
+
+
+.client_inf_cont h4 {
+
+    font-size: 25px;
+
+}
+
+
+
+.client_inf {
+
+    width: 200px;
+
+    height: 170px;
+
+    margin-right: 80px;
+
+    float: left;
+
+}
+
+
+
+.client_inf p {
+
+    padding: 16px 0px;
+
+    font-size: 13px;
+
+}
+
+
+.client_inf input {
+
+    height: 44px;
+
+    text-align: center;
+
+    background: #63b5ae;
+
+    border-radius: 5px;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    padding: 15px 42px;
+
+}
+
+
+
+.proj_des {
+
+    width: 850px;
+
+    height: 170px;
+
+    float: left;
+
+}
+
+
+
+.proj_des p {
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    padding: 12px 0px 0px 0px;
+
+}
+
+
+
+.cal_cost_cont {
+
+    padding: 200px 110px 0px 110px;
+
+}
+
+
+
+.cal_cost_cont h3 {
+
+    padding-bottom: 10px;
+
+}
+
+
+
+.cal_cost {
+
+    text-align: left;
+
+}
+
+
+
+.cal_cost > h4 {
+
+    padding: 49px 0px 24px 3px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #1c2534;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.cal_select {
+
+    width: 891px;
+
+    background: #eee;
+
+}
+
+
+
+.cal_cost select {
+
+    font-size: 11px;
+
+    width: 860px;
+
+    height: 60px;
+
+    padding: 21px;
+
+    background: #eee;
+
+    color: #737373;
+
+}
+
+
+
+.green_line {
+
+    width: 891px;
+
+    margin: 36px 0px 19px 0px;
+
+    padding: 1px 0px;
+
+    background: #d1d1d1;
+
+}
+
+
+
+.show_res {
+
+    color: #1c2534;
+
+}
+
+
+
+.show_res h4 {
+
+    float: left;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+
+.show_res b {
+
+    font-size: 19px;
+
+    float: right;
+
+}
+
+
+
+.choise_time {
+
+    width: 891px;
+
+    height: 19px;
+
+}
+
+
+
+.choise_cost {
+
+    padding-top: 17px;
+
+    width: 891px;
+
+    height: 19px;
+
+}
+
+
+
+.stat {
+
+    width: 100%;
+
+    height: 520px;
+
+    padding: 103px 342px 0px 341px;
+
+    background: url(../img/bg_skill.jpg);
+
+    text-align: center;
+
+}
+
+.stat_cont {}
+
+
+
+.box_stat {
+
+    margin: 85px 75px 0px 75px;
+    float: left;
+
+    width: 155px;
+
+    height: 185px;
+
+}
+
+
+.box_stat h3 {
+
+    padding: 32px 0px 30px 0px;
+}
+
+.box_stat p {
+
+    font-size: 11px;
+    font-weight: bold;
+    color: #263244;
+
+}
+
+.review {
+    width: 100%;
+    height: 590px;
+    text-align: center;
+    padding: 110px 610px 90px 610px;
+}
+
+.review > img {
+    width: 100px;
+    height: 100px;
+    margin: 58px 0px 15px 0px;
+}
+
+.review p {
+    font-size: 11px;
+    font-weight: 500;
+    margin: 18px 0px 18px 0px;
+}
+
+.review b {
+    font-weight: bold;
+}
+
+.contact {
+    background: url(../img/bg_contact.jpg);
+    width: 100%;
+    height: 808px;
+    padding: 105px 595px 65px 595px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h3 {
+    color: #fff;
+}
+
+.contact > p {
+    margin: 33px 0px 45px 0px;
+}
+
+.my_contact_info {
+    width: 100%;
+    height: 75px;
+}
+
+.my_contact_info p {
+    padding-top: 8px;
+}
+
+.my_geo {
+    width: 140px;
+    height: 75px;
+    float: left;
+}
+
+.my_mail {
+    width: 140px;
+    height: 75px;
+    float: left;
+    margin: 0px 147px 0px 146px;
+}
+
+.my_number {
+    width: 140px;
+    height: 75px;
+    float: left;
+}
+
+.send_message p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.send_message form {
+    margin-top: 46px;
+}
+
+.input_name > input {
+    float: left;
+    width: 350px;
+    height: 35px;
+    margin-bottom: 14px;
+    padding: 13px;
+    background: #eee;
+}
+
+.input_mail > input {
+    float: right;
+    width: 350px;
+    height: 35px;
+    margin-bottom: 14px;
+    padding: 13px;
+    background: #eee;
+}
+
+.send_message textarea {
+    background: #eee;
+    width: 100%;
+    height: 93px;
+    padding: 13px;
+    margin-bottom: 28px;
+    resize: none;
+}
+
+.feedback_send_but > input {
+    height: 46px;
+
+    text-align: center;
+
+    border: 2px solid #fff;
+
+    background: none;
+
+
+    border-radius: 5px;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    padding: 14px 18px;
+}
+
+.link-img {
+    margin-top: 86px;
+}
+
+
+.link-img > a {
+    padding: 0px 28px;
+}
+
+.fb{
+    float: left;
+    margin-left: 158px;
+}
+
+.tw{
+    float: left;
+    padding-top: 4px;
+    margin-left: 55px;
+}
+
+.bl{
+    padding-top: 2px;    
+    float: left;
+    margin-left: 55px;
+}
+
+.gh{
+    padding-top: 2px;    
+    float: left;    
+    margin-left: 52px;
+}
+
+.in{
+    padding-top: 2px;    
+    float: left;    
+    margin-left: 53px;
+}
+
+.li{
+    padding-top: 2px;    
+    float: left;    
+    margin-left: 53px;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    padding-top: 143px;
+    background: url(../img/map.jpg);
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    background: url(../img/map.jpg);
+}
+
+.footer {
+    background: #354051;
+    width: 100%;
+    height: 96px;
+    text-align: center;
+}
+
+.footer > p {
+    font-size: 10px;
+    color: #fff;
+    line-height: 96px;
 }
