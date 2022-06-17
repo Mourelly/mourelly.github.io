@@ -8,12 +8,15 @@ h3 {
     font-size: 33px;
     font-weight: bold;
     color: #263244;
+    animation: comming 2s;
 }
 
 nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 99;
 }
 
 .logo {
@@ -22,6 +25,9 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s;
+    -o-animation: comming 2s;
+    animation: comming 2s;
 }
 
 .menu {
@@ -36,11 +42,54 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+
+.menu li a {
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: #e88604;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2.0s;
 }
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/background.jpg) center/cover no-repeat;
 }
 
@@ -49,6 +98,13 @@ nav {
     margin: 432px 0px 0px 404px;
     color: 2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title_container h1 {
@@ -76,7 +132,18 @@ nav {
     margin: 58px 14px 0px 14px;
 }
 
+.title_container input { 
+    transition: all 0.2s;
+}
 
+.title_container input:hover { 
+    background-color: #344051;
+    color: white;
+}
+
+.title_container input:active { 
+    transform: scale(1.1);
+}
 
 .for_me {
     width: 100%;
@@ -94,6 +161,19 @@ nav {
 .for_me p {
     text-align: justify;
     font-size: 17px;
+}
+
+.for_me input { 
+    transition: all 0.2s;
+}
+
+.for_me input:hover { 
+    background-color: #344051;
+    color: white;
+}
+
+.for_me input:active { 
+    transform: scale(1.1);
 }
 
 .line {
@@ -209,16 +289,23 @@ nav {
 
 
 .client_inf_cont {
-
     height: 185px;
-
-    width: 1136;
-
+    width: 1136px;
     text-align: left;
-
 }
 
+.client_inf_cont input { 
+    transition: all 0.2s;
+}
 
+.client_inf_cont input:hover { 
+    background-color: #344051;
+    color: white;
+}
+
+.client_inf_cont input:active { 
+    transform: scale(1.1);
+}
 
 .example {
 
@@ -390,9 +477,9 @@ nav {
 
 
 .show_res {
-
+    width: 100%;
+    height: 38px;
     color: #1c2534;
-
 }
 
 
@@ -441,17 +528,15 @@ nav {
 
 
 .stat {
-
     width: 100%;
-
     height: 520px;
-
     padding: 103px 342px 0px 341px;
-
     background: url(../img/bg_skill.jpg);
-
     text-align: center;
-
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .stat_cont {}
@@ -606,6 +691,19 @@ nav {
     padding: 14px 18px;
 }
 
+.feedback_send_but > input { 
+    transition: all 0.2s;
+}
+
+.feedback_send_but > input:hover { 
+    background-color: #fff;
+    color: black;
+}
+
+.feedback_send_but > input:active { 
+    transform: scale(1.1);
+}
+
 .link-img {
     margin-top: 86px;
 }
@@ -675,4 +773,46 @@ nav {
     font-size: 10px;
     color: #fff;
     line-height: 96px;
+}
+
+@keyframes comming{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+.areaForLoader {
+  background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 9999;
 }
